@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        .container {
+            height: 800px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .size {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box {
+            border: 1px solid black;
+        }
+
+        .box-2,
+        .box-3 {
+            border: 1px solid;
+        }
+
+
+
+
+
+        @media screen and (max-width: 1024px) {
+            .container {
+                flex-direction: column-reverse;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+
+            .box-2,
+            .box-3 {
+                flex-direction: column-reverse;
+                background-color: aquamarine;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <main>
+
+        <div class="container">
+            <div class="box"><span><img class="size" src="./img/wallpaperflare.com_wallpaper (2).jpg" alt=""
+                        srcset=""></span>
+                <h1>heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, aliquid.</p>
+            </div>
+            <div class="box-2"><span><img class="size" src="./img/wallpaperflare.com_wallpaper (2).jpg" alt=""
+                        srcset=""></span>
+                <h1>heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, aliquid.</p>
+            </div>
+            <div class="box-3"><span><img class="size" src="./img/wallpaperflare.com_wallpaper (2).jpg" alt=""
+                        srcset=""></span>
+                <h1>heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, aliquid.</p>
+            </div>
+            <div class="box"><span><img class="size" src="./img/wallpaperflare.com_wallpaper (2).jpg" alt=""
+                        srcset=""></span>
+                <h1>heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, aliquid.</p>
+            </div>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
